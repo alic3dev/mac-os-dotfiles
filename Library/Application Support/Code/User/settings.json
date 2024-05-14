@@ -4,7 +4,6 @@
   "editor.tabSize": 2,
   "catppuccin.workbenchMode": "minimal",
   "catppuccin.accentColor": "mauve",
-  // use your accent (pink) on the statusBar as well
   "catppuccin.customUIColors": {
     "mocha": {
       "statusBar.foreground": "accent"
@@ -18,21 +17,32 @@
   "workbench.preferredHighContrastLightColorTheme": "Catppuccin Mocha",
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.iconTheme": "catppuccin-mocha",
-  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "FiraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "svg.preview.mode": "svg",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": false
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
   },
   "git.confirmSync": false,
-  // we try to make semantic highlighting look good
   "editor.semanticHighlighting.enabled": true,
-  // prevent VSCode from modifying the terminal colors
   "terminal.integrated.minimumContrastRatio": 1,
-  // make the window's titlebar use the workbench colors
-  "window.titleBarStyle": "custom"
+  "window.titleBarStyle": "custom",
+  "editor.unicodeHighlight.allowedLocales": {
+    "ja": true
+  },
+  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+  "lldb.launch.expressions": "native",
+  "[swift]": {
+    "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
+  },
+  "swift.coverage.alwaysShowStatusItem": false,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "svelte.enable-ts-plugin": true,
+  "workbench.startupEditor": "none"
 }

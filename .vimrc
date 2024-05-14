@@ -1,3 +1,7 @@
+set tabstop=2
+set shiftwidth=0
+set expandtab
+
 if !$TERM_PROGRAM =~ "Apple_Terminal"
   set termguicolors
 endif

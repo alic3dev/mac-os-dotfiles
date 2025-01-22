@@ -3,19 +3,19 @@
   "git.autofetch": true,
   "editor.tabSize": 2,
   "catppuccin.workbenchMode": "minimal",
-  "catppuccin.accentColor": "mauve",
+  "catppuccin.accentColor": "sky",
   "catppuccin.customUIColors": {
-    "mocha": {
+    "all": {
       "statusBar.foreground": "accent"
     }
   },
-  "window.autoDetectColorScheme": false,
-  "window.autoDetectHighContrast": false,
-  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
-  "workbench.preferredLightColorTheme": "Catppuccin Mocha",
-  "workbench.preferredHighContrastColorTheme": "Catppuccin Mocha",
-  "workbench.preferredHighContrastLightColorTheme": "Catppuccin Mocha",
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "catppuccin-icons.hidesExplorerArrows": true,
+  "window.autoDetectColorScheme": true,
+  "window.autoDetectHighContrast": true,
+  "workbench.preferredLightColorTheme": "Catppuccin Latte",
+  "workbench.preferredHighContrastColorTheme": "Catppuccin Macchiato",
+  "workbench.preferredHighContrastLightColorTheme": "Catppuccin Latte",
+  "workbench.colorTheme": "Catppuccin Latte",
   "workbench.iconTheme": "catppuccin-mocha",
   "editor.fontFamily": "FiraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
@@ -39,10 +39,46 @@
   "[swift]": {
     "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
   },
-  "swift.coverage.alwaysShowStatusItem": false,
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
   },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always"
+    }
+  },
+  "[c]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[cpp]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "isort.args": ["--profile", "black"],
   "svelte.enable-ts-plugin": true,
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "gitlens.menus": false,
+  "terminal.integrated.inheritEnv": false,
+  "editor.multiCursorLimit": 100000,
+  "makefile.configureOnOpen": true,
+  "lldb.suppressUpdateNotifications": true,
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "workbench.statusBar.visible": false,
+  "workbench.activityBar.location": "hidden",
+  "window.customTitleBarVisibility": "never",
+  "chat.commandCenter.enabled": false,
+  "gitlens.plusFeatures.enabled": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.showTabs": "none",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "extensions.autoUpdate": false,
+  "errorLens.enabled": false
 }

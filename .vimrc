@@ -1,15 +1,13 @@
 set tabstop=2
 set shiftwidth=0
 set expandtab
+set mouse=a
 
-if !$TERM_PROGRAM =~ "Apple_Terminal"
-  set termguicolors
-endif
-syntax on
+"syntax on
+set number
 set re=0
 filetype on
-colorscheme catppuccin_mocha
-set laststatus=2
+"set laststatus=2
 
 if !has('gui_running')
   set t_Co=256
@@ -17,7 +15,5 @@ endif
 
 set noshowmode
 
-let g:lightline = {'colorscheme': 'catppuccin_mocha'}
-
-let g:javascript_plugin_jsdoc = 1
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 

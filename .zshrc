@@ -1,10 +1,10 @@
 # Enviroment Variables
-export PATH=/opt/homebrew/opt/ruby/bin:$PATH:/usr/local/sbin
+export PATH=/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH:/usr/local/sbin
 export NEXT_TELEMETRY_DISABLED=1
 export BAT_THEME=ansi
 export BAT_PAGER=
-export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
+#export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
+#export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
 
 export ALIC3_SH_DIR="/Users/alic3/Programming/fire/termux/sh"
 
@@ -26,26 +26,31 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-autoload -Uz compinit && compinit -i
+#autoload -Uz compinit && compinit -i
 
 # command-not-found
-# HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
-# if [ -f "$HB_CNF_HANDLER" ]; then
-# source "$HB_CNF_HANDLER";
-# fi
+HB_CNF_HANDLER="$(brew --repository)/Library/Taps/homebrew/homebrew-command-not-found/handler.sh"
+if [ -f "$HB_CNF_HANDLER" ]; then
+source "$HB_CNF_HANDLER";
+fi
 
 # Better npm completion
-source ~/.zsh_plugins/zsh-better-npm-completion/zsh-better-npm-completion.plugin.zsh
+# source ~/.zsh_plugins/zsh-better-npm-completion/zsh-better-npm-completion.plugin.zsh
 
-# if [[ "$TERM_PROGRAM" == "vscode" ]]; then
+PS1='%1d: '
+
+#if [[ "$TERM_PROGRAM" == "vscode" ]]; then
 #  PS1='%1d: '
-# else
-  # Git console
-  export GIT_PS1_SHOWDIRTYSTATE=1
-  export GIT_PS1_SHOWCOLORHINTS=1  
-  source ~/.zsh_plugins/git-prompt.sh
-  precmd () { __git_ps1 "" "%1d: " "(%s) | " }
-# fi
+#else
+#  # Git console
+#  export GIT_PS1_SHOWDIRTYSTATE=1
+#  export GIT_PS1_SHOWCOLORHINTS=1 
+#  source ~/.zsh_plugins/git-prompt.sh
+#  precmd () { __git_ps1 "%1d" ": " "[%s]" }
+#fi
+
+#zstyle ':completion:*:*:git:*' script /Users/alic3/.zsh_plugins/git-completion.bash
+#fpath=(/Users/alic3/.zsh $fpath)
 
 # Aliases
 alias ls="ls -G --color"
@@ -79,11 +84,9 @@ if [[ "$dump_file" -nt "${dump_file}.zwc" || ! -f "${dump_file}.zwc" ]]; then
 fi
 unset dump_file
 
-source ~/.zsh/catppuccin_latte-zsh-syntax-highlighting.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
+if [[ "$TERM_PROGRAM" == "iTerm.app" ]]; then
+  test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+fi
 
 # pnpm
 export PNPM_HOME="/Users/alic3/Library/pnpm"
@@ -93,15 +96,13 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-# Created by `pipx` on 2024-04-18 21:33:04
 export PATH="$PATH:/Users/alic3/.local/bin"
 
 eval "$(register-python-argcomplete pipx)"
 
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#__conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else

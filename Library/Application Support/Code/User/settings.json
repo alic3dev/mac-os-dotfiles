@@ -12,11 +12,7 @@
   "catppuccin-icons.hidesExplorerArrows": true,
   "window.autoDetectColorScheme": true,
   "window.autoDetectHighContrast": true,
-  "workbench.preferredLightColorTheme": "Catppuccin Latte",
-  "workbench.preferredHighContrastColorTheme": "Catppuccin Macchiato",
-  "workbench.preferredHighContrastLightColorTheme": "Catppuccin Latte",
-  "workbench.colorTheme": "Catppuccin Latte",
-  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.preferredLightColorTheme": "Quiet Light",
   "editor.fontFamily": "FiraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "diffEditor.ignoreTrimWhitespace": false,
@@ -71,7 +67,6 @@
   "editor.renderControlCharacters": false,
   "workbench.statusBar.visible": false,
   "workbench.activityBar.location": "hidden",
-  "window.customTitleBarVisibility": "never",
   "chat.commandCenter.enabled": false,
   "gitlens.plusFeatures.enabled": false,
   "workbench.editor.editorActionsLocation": "hidden",
@@ -80,5 +75,10 @@
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.unicodeHighlight.nonBasicASCII": false,
   "extensions.autoUpdate": false,
-  "errorLens.enabled": false
+  "errorLens.enabled": false,
+  "workbench.preferredDarkColorTheme": "Monokai",
+  "terminal.integrated.cursorStyle": "line",
+  "outline.icons": false,
+  "breadcrumbs.icons": false,
+  "workbench.iconTheme": null
 }

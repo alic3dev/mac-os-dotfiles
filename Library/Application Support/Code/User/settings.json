@@ -1,84 +1,336 @@
 {
-  "explorer.confirmDelete": false,
-  "git.autofetch": true,
-  "editor.tabSize": 2,
-  "catppuccin.workbenchMode": "minimal",
-  "catppuccin.accentColor": "sky",
-  "catppuccin.customUIColors": {
-    "all": {
-      "statusBar.foreground": "accent"
-    }
+  "workbench.colorCustomizations": {
+    "badge.background": "#FFFFFF",
+    "badge.foreground": "#000000",
+
+    "button.border": "#ffffff",
+    "button.background": "#FFFFFF",
+    "button.foreground": "#000000",
+    "button.secondaryBackground": "#FFFFFF",
+    "button.secondaryForeground": "#000000",
+    "button.separator": "#FFFFFF",
+    "button.hoverBackground": "#FFFFFF",
+    "button.secondaryHoverBackground": "#FFFFFF",
+
+    "editorActionList.background": "#000000",
+    "editorActionList.focusBackground": "#000000",
+    "editorActionList.focusForeground": "#FFFFFF",
+    "editorActionList.foreground": "#FFFFFF",
+
+    "editor.background": "#000000",
+
+    "editor.compositionBorder": "#ffffff",
+    "editor.findMatchBackground": "#FFFFFF",
+    "editor.findMatchBorder": "#FFFFFF",
+    "editor.findMatchForeground": "#000000",
+    "editor.findMatchHighlightBackground": "#FFFFFF",
+    "editor.findMatchHighlightBorder": "#FFFFFF",
+    "editor.findMatchHighlightForeground": "#FFFFFFFF",
+    "editor.findRangeHighlightBackground": "#FFFFFF",
+    "editor.findRangeHighlightBorder": "#FFFFFFFF",
+    "editor.focusedStackFrameHighlightBackground": "#FFFFFF",
+    "editor.foldBackground": "#FFFFFF",
+    "editor.foldPlaceholderForeground": "#FFFFFF",
+    "editor.foreground": "#FFFFFF",
+    "editor.hoverHighlightBackground": "#FFFFFFFF",
+    "editor.inactiveSelectionBackground": "#000000FF",
+    "editor.inlineValuesBackground": "#000000",
+    "editor.inlineValuesForeground": "#FFFFFF",
+    "editor.lineHighlightBackground": "#FFFFFF",
+    "editor.lineHighlightBorder": "#FFFFFF",
+    "editor.linkedEditingBackground": "#FFFFFF",
+    "editor.placeholder.foreground": "#FFFFFF",
+    "editor.rangeHighlightBackground": "#FFFFFFFF",
+    "editor.rangeHighlightBorder": "#FFFFFF",
+    "editor.selectionBackground": "#FFFFFF",
+    "editor.selectionForeground": "#000000",
+    "editor.selectionHighlightBackground": "#FFFFFF",
+    "editor.selectionHighlightBorder": "#FFFFFF",
+    "editor.snippetFinalTabstopHighlightBackground": "#FFFFFF",
+    "editor.snippetFinalTabstopHighlightBorder": "#FFFFFF",
+    "editor.snippetTabstopHighlightBackground": "#FFFFFF",
+    "editor.snippetTabstopHighlightBorder": "#FFFFFF",
+    "editor.stackFrameHighlightBackground": "#FFFFFF",
+    "editor.symbolHighlightBackground": "#FFFFFFFF",
+    "editor.symbolHighlightBorder": "#FFFFFF",
+    "editor.wordHighlightBackground": "#FFFFFFFF",
+    "editor.wordHighlightBorder": "#FFFFFF",
+    "editor.wordHighlightStrongBackground": "#FFFFFF",
+    "editor.wordHighlightStrongBorder": "#FFFFFF",
+    "editor.wordHighlightTextBackground": "#FFFFFF",
+    "editor.wordHighlightTextBorder": "#FFFFFF",
+
+    "editorBracketHighlight.foreground1": "#FFFFFF",
+    "editorBracketHighlight.foreground2": "#FFFFFF",
+    "editorBracketHighlight.foreground3": "#FFFFFF",
+    "editorBracketHighlight.foreground4": "#FFFFFF",
+    "editorBracketHighlight.foreground5": "#FFFFFF",
+    "editorBracketHighlight.foreground6": "#FFFFFF",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#FFFFFF",
+
+    "editorBracketMatch.background": "#FFFFFF",
+    "editorBracketMatch.border": "#FFFFFF",
+
+    "editorBracketPairGuide.activeBackground1": "#FFFFFF",
+    "editorBracketPairGuide.activeBackground2": "#FFFFFF",
+    "editorBracketPairGuide.activeBackground3": "#FFFFFF",
+    "editorBracketPairGuide.activeBackground4": "#FFFFFF",
+    "editorBracketPairGuide.activeBackground5": "#FFFFFF",
+    "editorBracketPairGuide.activeBackground6": "#FFFFFF",
+    "editorBracketPairGuide.background1": "#FFFFFF",
+    "editorBracketPairGuide.background2": "#FFFFFF",
+    "editorBracketPairGuide.background3": "#FFFFFF",
+    "editorBracketPairGuide.background4": "#FFFFFF",
+    "editorBracketPairGuide.background5": "#FFFFFF",
+    "editorBracketPairGuide.background6": "#FFFFFF",
+
+    "editorCodeLens.foreground": "#FFFFFF",
+
+    "editorCursor.background": "#000000",
+    "editorCursor.foreground": "#FFFFFF",
+
+    "editorError.background": "#000000",
+    "editorError.border": "#FFFFFF",
+    "editorError.foreground": "#000000",
+
+    "editorGhostText.background": "#FFFFFF",
+    "editorGhostText.border": "#FFFFFF",
+    "editorGhostText.foreground": "#000000",
+
+    "editorHoverWidget.background": "#000000",
+    "editorHoverWidget.foreground": "#FFFFFF",
+    "editorHoverWidget.border": "#FFFFFF",
+
+    "errorLens.warningBackground": "#000000",
+    "errorLens.warningForeground": "#FFFFFF",
+    "list.focusForeground": "#000000",
+    "list.deemphasizedForeground": "#000000",
+    "list.activeSelectionIconForeground": "#000000",
+    "list.focusHighlightForeground": "#000000",
+    "list.focusBackground": "#FFFFFF",
+    "list.highlightForeground": "#000000",
+
+    "errorLens.errorBackground": "#000000",
+    "errorLens.errorForeground": "#ffffff",
+    "quickInputList.focusForeground": "#000000",
+
+    "editorHint.border": "#FFFFFF",
+    "editorHint.foreground": "#FFFFFF",
+
+    "editorInfo.background": "#FFFFFF",
+    "editorInfo.foreground": "#000000",
+    "editorInfo.border": "#000000",
+
+    "editorInlayHint.background": "#000000",
+    "editorInlayHint.foreground": "#FFFFFF",
+    "editorInlayHint.parameterBackground": "#FFFFFF",
+    "editorInlayHint.parameterForeground": "#000000",
+    "editorInlayHint.typeBackground": "#FFFFFF",
+    "editorInlayHint.typeForeground": "#000000",
+
+    "editorLineNumber.activeForeground": "#FFFFFF",
+    "editorLineNumber.dimmedForeground": "#FFFFFF",
+    "editorLineNumber.foreground": "#FFFFFF",
+
+    "editorOverviewRuler.bracketMatchForeground": "#000000",
+
+    "editorSuggestWidget.background": "#000000",
+    "editorSuggestWidget.border": "#FFFFFF",
+    "editorSuggestWidget.foreground": "#FFFFFF",
+    "editorSuggestWidgetStatus.foreground": "#FFFFFF",
+    "editorSuggestWidget.focusHighlightForeground": "#000000",
+    "editorSuggestWidget.selectedBackground": "#FFFFFF",
+    "editorSuggestWidget.selectedForeground": "#000000",
+    "editorSuggestWidget.highlightForeground": "#FFFFFF",
+    "editorSuggestWidget.selectedIconForeground": "#000000",
+
+    "editorWarning.background": "#00000000",
+    "editorWarning.border": "#000000",
+    "editorWarning.foreground": "#000000",
+
+    "foreground": "#FFFFFF",
+
+    "git.blame.editorDecorationForeground": "#FFFFFF",
+
+    "gitDecoration.untrackedResourceForeground": "#FFFFFF",
+    "gitDecoration.addedResourceForeground": "#FFFFFF",
+    "gitDecoration.conflictingResourceForeground": "#FFFFFF",
+    "gitDecoration.ignoredResourceForeground": "#FFFFFF",
+    "gitDecoration.submoduleResourceForeground": "#FFFFFF",
+    "gitDecoration.deletedResourceForeground": "#FFFFFF",
+    "gitDecoration.modifiedResourceForeground": "#FFFFFF",
+    "gitDecoration.renamedResourceForeground": "#FFFFFF",
+    "gitDecoration.stageDeletedResourceForeground": "#FFFFFF",
+    "gitDecoration.stageModifiedResourceForeground": "#FFFFFF",
+
+    "icon.foreground": "#000000",
+
+    "input.background": "#000000",
+    "input.border": "#FFFFFF",
+    "input.foreground": "#FFFFFF",
+
+    "list.activeSelectionBackground": "#FFFFFF",
+    "list.activeSelectionForeground": "#000000",
+    "list.hoverBackground": "#FFFFFF",
+    "list.hoverForeground": "#000000",
+    "list.inactiveSelectionBackground": "#FFFFFF",
+    "list.inactiveSelectionForeground": "#000000",
+
+    "menu.selectionForeground": "#000000",
+    "menu.selectionBackground": "#FFFFFF",
+    "menu.foreground": "#FFFFFF",
+    "menu.background": "#000000",
+    "menu.border": "#ffffff",
+    "menu.selectionBorder": "#FFFFFF",
+
+    "panel.background": "#000000",
+    "panel.border": "#FFFFFF",
+
+    "panelSectionHeader.background": "#000000",
+
+    "panelTitle.activeBorder": "#000000",
+
+    "search.resultsInfoForeground": "#FFFFFF",
+
+    "selection.background": "#FFFFFF",
+
+    "sideBar.background": "#000000",
+    "sideBar.border": "#ffffff",
+    "sideBar.foreground": "#FFFFFF",
+
+    "sideBarSectionHeader.background": "#000000",
+    "sideBarSectionHeader.foreground": "#FFFFFF",
+    "sideBarSectionHeader.border": "#FFFFFF",
+
+    "sideBarTitle.background": "#000000",
+    "sideBarTitle.foreground": "#FFFFFF",
+    "sideBarTitle.border": "#FFFFFF",
+
+    "terminal.ansiRed": "#FFFFFF",
+    "terminal.ansiBlack": "#000000",
+    "terminal.ansiBlue": "#ffffff",
+    "terminal.ansiBrightBlack": "#000000",
+    "terminal.ansiBrightBlue": "#ffffff",
+    "terminal.ansiBrightCyan": "#ffffff",
+    "terminal.ansiBrightGreen": "#ffffff",
+    "terminal.ansiBrightMagenta": "#ffffff",
+    "terminal.ansiBrightRed": "#ffffff",
+    "terminal.ansiBrightWhite": "#ffffff",
+    "terminal.ansiBrightYellow": "#ffffff",
+    "terminal.ansiCyan": "#ffffff",
+    "terminal.ansiGreen": "#ffffff",
+    "terminal.ansiMagenta": "#ffffff",
+    "terminal.ansiWhite": "#ffffff",
+    "terminal.ansiYellow": "#ffffff",
+    "terminal.background": "#000000",
+    "terminal.foreground": "#ffffff",
+
+    "titleBar.activeBackground": "#000000",
+    "titleBar.inactiveBackground": "#000000",
+
+    "tree.inactiveIndentGuidesStroke": "#FFFFFF",
+    "tree.indentGuidesStroke": "#FFFFFF",
+
+    "window.inactiveBorder": "#000000",
+    "window.activeBorder": "#000000"
   },
-  "catppuccin-icons.hidesExplorerArrows": true,
-  "window.autoDetectColorScheme": true,
-  "window.autoDetectHighContrast": true,
-  "workbench.preferredLightColorTheme": "Quiet Light",
-  "editor.fontFamily": "FiraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "svg.preview.mode": "svg",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "never"
-  },
-  "git.confirmSync": false,
-  "editor.semanticHighlighting.enabled": true,
-  "terminal.integrated.minimumContrastRatio": 1,
-  "window.titleBarStyle": "custom",
-  "editor.unicodeHighlight.allowedLocales": {
-    "ja": true
-  },
-  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
-  "lldb.launch.expressions": "native",
-  "[swift]": {
-    "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
-  },
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
-  },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "always"
-    }
-  },
-  "[c]": {
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
-  },
-  "[cpp]": {
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
-  },
-  "isort.args": ["--profile", "black"],
-  "svelte.enable-ts-plugin": true,
-  "workbench.startupEditor": "none",
-  "gitlens.menus": false,
-  "terminal.integrated.inheritEnv": false,
-  "editor.multiCursorLimit": 100000,
-  "makefile.configureOnOpen": true,
-  "lldb.suppressUpdateNotifications": true,
-  "editor.minimap.enabled": false,
+
   "breadcrumbs.enabled": false,
-  "editor.renderWhitespace": "none",
-  "editor.renderControlCharacters": false,
-  "workbench.statusBar.visible": false,
-  "workbench.activityBar.location": "hidden",
+
   "chat.commandCenter.enabled": false,
-  "gitlens.plusFeatures.enabled": false,
-  "workbench.editor.editorActionsLocation": "hidden",
-  "workbench.editor.showTabs": "none",
+  "chat.detectParticipant.enabled": false,
+
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderGutterMenu": false,
+  "diffEditor.renderMarginRevertIcon": false,
+
+  "editor.bracketPairColorization.enabled": true,
+  "editor.colorDecorators": false,
+  "editor.cursorStyle": "line-thin",
+  "editor.cursorBlinking": "solid",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "monospace",
+  "editor.fontLigatures": false,
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "on",
+  "editor.matchBrackets": "always",
+  "editor.occurrencesHighlight": "off",
+  "editor.renderControlCharacters": false,
+  "editor.renderLineHighlight": "none",
+  "editor.renderWhitespace": "none",
+  "editor.selectionHighlight": true,
+  "editor.showDeprecated": false,
+  "editor.showFoldingControls": "never",
+  "editor.tabSize": 2,
+
+  "editor.inlayHints.enabled": "on",
+
+  "editor.guides.bracketPairs": false,
+  "editor.guides.indentation": false,
+
+  "editor.semanticHighlighting.enabled": false,
+
+  "editor.suggest.filterGraceful": false,
+  "editor.suggest.showColors": false,
+  "editor.suggest.showIcons": false,
+  "editor.suggest.showInlineDetails": false,
+
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.unicodeHighlight.nonBasicASCII": false,
+
+  "explorer.confirmDelete": false,
+
+  "explorer.decorations.colors": false,
+  "explorer.decorations.badges": false,
+
   "extensions.autoUpdate": false,
-  "errorLens.enabled": false,
-  "workbench.preferredDarkColorTheme": "Monokai",
-  "terminal.integrated.cursorStyle": "line",
+
+  "git.autofetch": false,
+  "git.confirmSync": false,
+  "git.suggestSmartCommit": false,
+
   "outline.icons": false,
-  "breadcrumbs.icons": false,
-  "workbench.iconTheme": null
+  "outline.showNumbers": false,
+
+  "scm.diffDecorations": "none",
+
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorStyleInactive": "line",
+  "terminal.integrated.enableVisualBell": false,
+  "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.initialHint": false,
+  "terminal.integrated.minimumContrastRatio": 0,
+
+  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+
+  "terminal.integrated.suggest.enabled": false,
+
+  "terminal.integrated.tabs.enabled": false,
+
+  "window.autoDetectColorScheme": false,
+  "window.autoDetectHighContrast": false,
+  "window.title": " ",
+  "window.titleBarStyle": "custom",
+  "window.customTitleBarVisibility": "never",
+  "window.commandCenter": false,
+
+  "workbench.colorTheme": "Solarized Dark",
+  "workbench.iconTheme": null,
+  "workbench.startupEditor": "none",
+
+  "workbench.activityBar.location": "hidden",
+
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.limit.enabled": false,
+  "workbench.editor.showIcons": false,
+  "workbench.editor.showTabs": "none",
+
+  "workbench.layoutControl.enabled": false,
+
+  "workbench.panel.showLabels": false,
+
+  "workbench.statusBar.visible": false
 }
+
